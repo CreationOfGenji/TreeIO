@@ -5,7 +5,7 @@ import asyncio
 import time
 import os
 
-bot = commands.Bot(description="Best Boi", command_prefix="T.")
+bot = commands.Bot(description="100% Embed-Free!", command_prefix="T.")
 
 @bot.command()
 async def ping():
