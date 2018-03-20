@@ -3,6 +3,7 @@ from discord.ext import commands
 import logging
 import asyncio
 import time
+import os
 
 bot = commands.Bot(description="Best Boi", command_prefix="T.")
 
@@ -56,4 +57,4 @@ async def kill(ctx, *, member : discord.Member = None):
     else:
         await bot.say(ctx.message.author.mention + " HAS MURDERED " + member.mention + " . CALL THE POLICE!")
     
-bot.run("NDI0NjEyOTM0NjQwMDc0NzYy.DZLB2w.C4TAKZH1rnu3XCs8qL6_YHHq-0A")
+bot.run(os.getenv('TOKEN'))
